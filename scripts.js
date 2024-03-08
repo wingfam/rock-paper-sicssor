@@ -1,6 +1,6 @@
 function getComputerChoice() {
     // Use Math.random() to generate a random number between 0 and 1. Then multiply
-    // it by the length of the array. Finally use Math.floor() to round down to the nearest integer
+    // it by the length of the array. Math.floor() to round down to the nearest integer
     // to get index of the array.
     const computerChoices = ["Rock", "Paper", "Scissors"];
     return computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -34,10 +34,6 @@ function playRound() {
             "You chose " + userSelection + " the computer chose " + computerSelection
         ); 
 
-        // Compare userSelection with computerSelection using selections object created earlier.
-        // If any of userSelection is stronger than computerSelection, then you win one round.
-        // If any of userSelection is weaker than computerSelection, then you lose one round.
-        // Everything else will result in a tie.
         if (selections[userSelection].strongTo === computerSelection) {
             alert("You win! You get 1 score.");
             userScore += 1;
