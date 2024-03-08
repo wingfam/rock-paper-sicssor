@@ -1,22 +1,3 @@
-/*
-
-Pseudocode:
-0. Display a message to tell if user want to play 5 round against computer opponent.
-1. Display instructions for user to input rock/paper/scissors.
-2. When user inputs rock/paper/scissors (UPPERCASE or lowercase or BoTh).
-3. The computer will randomly return a string either 'Rock', 'Paper' or 'Scissors'.
-4. Use for loop to loop for 5 round.
-4.1 Get both user's choice and computer's choice and compare them.
-4.2 Display both user's choice and computer's choice in this format 'You chose Rock and computer chose Paper'
-5. If user's choice === 'Rock' and computer's choice === 'Rock' then announce 'It's a tie. No one get a score.'
-6. If user's choice === 'Rock' and computer's choice === 'Scissors' then announce 'You win! You get 1 score.'
-7. If user's choice === 'Rock' and computer's choice === 'Paper' then announce 'You lose! The computer get 1 score.'
-8. The same logic applied to user's other choices.
-9. After 5 round, display player and computer final scores.
-10. Announce the winner and prompt if the user want to play again.
-
-*/
-
 function getComputerChoice() {
     // Use Math.random() to generate a random number between 0 and 1. Then multiply
     // it by the length of the array. Finally use Math.floor() to round down to the nearest integer
